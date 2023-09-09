@@ -1,0 +1,520 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>Game Ed</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="course.css">
+	<script type="text/javascript" src="java.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header id="header" class="hide-header">
+
+    <nav>
+        <div class="logo"><img src="/GameEd/images/icon/logo4.jpg" alt="logo"></div>
+        <ul>
+            <li><a class="active" href="">Home</a></li>
+            <li><a href="#portfolio_section">Portfolio</a></li>
+            <li><a href="#team_section">About us</a></li>
+            <li><a href="#services_section">Services</a></li>
+            <li><a href="#contactus_section">Contact</a></li>
+            
+        </ul>
+        <div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="/GameEd/images/icon/search.png" alt="search" onclick=slide()></div>
+        <a class="get-started" href="login.html">Login/ Register</a>
+        <img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+    </nav>
+    <div class="head-container">
+        <div class="quote">
+            <p>Learn programming by playing games on GameEd</p>
+            <h5>Before jump into this you can go through the video by click here! . </h5>
+            <div class="play">
+                <img src="/GameEd/images/icon/play.png" alt="play"><span><a href="https://youtu.be/c5AN0JDmQY4" target="_blank">Watch Now</a></span>
+            </div>
+        </div>
+        <div class="svg-image">
+            <img src="/GameEd/pyhome/Gamification_of_education.jpg" alt="svg">
+        </div>
+    </div>
+    <br>
+    <div class="side-menu" id="side-menu">
+        <div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+        <div class="user">
+            <img src="images/creator/roshan.jpeg" alt="Username">
+            <p>Deiveegan3909</p>
+        </div>
+        <ul>
+            <li><a href="#about_section">About</a></li>
+            <li><a href="#portfolio_section">Portfolio</a></li>
+            <li><a href="#team_section">Team</a></li>
+            <li><a href="#services_section">Services</a></li>
+            <li><a href="#contactus_section">Contact</a></li>
+            <li><a href="#feedBACK">Feedback</a></li>
+            <li><a href="login.html">Login/Register</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="diffSection" id="games_section">
+  <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Coding Games</p></center>
+  <div class="totalcard">
+    <div class="card">
+      <center><img src="/GameEd/Games/Im/Codecombat.jpeg"></center>
+      <center>
+        <div class="card-title">CodeCombat</div>
+        <div id="detail">
+          <p>CodeCombat is a platform for learning programming through video games. It offers a fun and engaging way for beginners to learn coding concepts and programming languages like Python, JavaScript, and HTML/CSS.</p>
+          <div class="duty"></div>
+          <a href="https://codecombat.com/" target="_blank"><button class="btn-roshan">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+
+    <div class="card">
+      <center><img src="/GameEd/Games/Im/codingame.png"></center>
+      <center>
+        <div class="card-title">Codingame</div>
+        <div id="detail">
+          <p>A platform that offers a range of coding puzzles and challenges designed to improve coding skills. It features a gamified learning approach where players can solve problems using various programming languages while competing with other players.</p>
+          <div class="duty"></div>
+          <a href="https://www.codingame.com/start" target="_blank"><button class="btn-akhil">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+<div class="diffSection" id="games_section">
+  <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">programming concepts</p></center>
+  <div class="totalcard">
+    <div class="card">
+      <center><img src="/GameEd/Games/Im/Codehunt.jpeg"></center>
+      <center>
+        <div class="card-title">Code hunt</div>
+        <div id="detail">
+          <p>Code Hunt: A game that teaches basic programming concepts and syntax through a series of challenges. It covers a variety of programming languages and focuses on problem-solving and code understanding skills.</p>
+          <div class="duty"></div>
+         
+          <a href="https://codehunting.games/" target="_blank"><button class="btn-roshan">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+
+    <div class="card">
+      <center><img src="/GameEd/Games/Im/cyberdojo.png"></center>
+      <center>
+        <div class="card-title">Cyberdojo</div>
+        <div id="detail">
+          <p>A platform that offers a range of coding challenges in multiple programming languages. It provides a collaborative coding environment where players can practice their coding skills, solve problems, and learn from other developers..</p>
+          <div class="duty"></div>
+          <a href="https://cyber-dojo.org/" target="_blank"><button class="btn-akhil">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="diffSection" id="games_section">
+  <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Algorithms & problem-solving</p></center>
+  <div class="totalcard">
+    <div class="card">
+      <center><img src="/GameEd/Games/Im/Human resources management.jpeg"></center>
+      <center>
+        <div class="card-title">Human Resource Management</div>
+        <div id="detail">
+          <p> Experience the intricacies of managing a company's HR department in this interactive simulation. Make strategic decisions in recruitment, training, performance evaluation, and conflict resolution to ensure a productive and satisfied workforce.</p>
+          <div class="duty"></div>
+          <a href="https://tomorrowcorporation.com/humanresourcemachine" target="_blank"><button class="btn-roshan">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+
+    <div class="card">
+      <center><img src="/GameEd/Games/Im/projecteuler.jpeg"></center>
+      <center>
+        <div class="card-title">Project Euler</div>
+        <div id="detail">
+          <p>Sharpen your problem-solving and programming skills with a collection of challenging mathematical and computational problems. Solve intriguing puzzles using number theory, combinatorics, and algorithms, and join a supportive community of like-minded problem solvers.</p>
+          <div class="duty"></div>
+          <a href="https://projecteuler.net/" target="_blank"><button class="btn-akhil">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="diffSection" id="games_section">
+  <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Problem Solving</p></center>
+  <div class="totalcard">
+    <div class="card">
+      <center><img src="/GameEd/Games/Im/light bot.jpeg"></center>
+      <center>
+        <div class="card-title">Light bot</div>
+        <div id="detail">
+          <p>A puzzle game that teaches programming concepts through guiding a robot through a series of challenges. Players need to write sequences of commands to make the robot navigate obstacles and light up tiles..</p>
+          <div class="duty"></div>
+          <a href="https://lightbot.com/" target="_blank"><button class="btn-roshan">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+
+    <div class="card">
+      <center><img src="/GameEd/Games/Im/dragon box.jpeg"></center>
+      <center>
+        <div class="card-title">Dragonbox</div>
+        <div id="detail">
+          <p>DragonBox is an educational game series that teaches math concepts through engaging gameplay. It covers algebra, geometry, numeracy, and coding. Players solve puzzles and challenges by manipulating objects and numbers.</p>
+          <div class="duty"></div>
+          <a href="https://dragonbox.com/" target="_blank"><button class="btn-akhil">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="diffSection" id="games_section">
+  <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Web development</p></center>
+  <div class="totalcard">
+    <div class="card">
+      <center><img src="images/games/codecombat.jpg"></center>
+      <center>
+        <div class="card-title">Flexbox froggy</div>
+        <div id="detail">
+          <p>A fun game that teaches the basics of CSS Flexbox layout. It presents interactive challenges where players need to manipulate the flexbox properties to position elements on the screen correctly.</p>
+          <div class="duty"></div>
+          <a href="https://flexboxfroggy.com/" target="_blank"><button class="btn-roshan">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+
+    <div class="card">
+      <center><img src="images/games/robocode.png"></center>
+      <center>
+        <div class="card-title">Untrusted</div>
+        <div id="detail">
+          <p>A puzzle game that teaches JavaScript concepts in a fun and interactive way. Players navigate through a series of levels by writing and manipulating JavaScript code to unlock doors, avoid traps, and progress through the game..</p>
+          <div class="duty"></div>
+          <a href="https://www.playuntrusted.com/" target="_blank"><button class="btn-akhil">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="diffSection" id="games_section">
+  <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Front-end           & Backend development</p></center>
+  <div class="totalcard">
+    <div class="card">
+      <center><img src="images/games/codecombat.jpg"></center>
+      <center>
+        <div class="card-title">Grid garden</div>
+        <div id="detail">
+          <p>Grid Garden is a browser-based game that teaches the basics of CSS grid layout. Players tend to a virtual garden by writing CSS code that positions and styles plants using grid properties. The game progressively introduces grid concepts, allowing players to practice creating grid layouts in a fun and interactive way..</p>
+          <div class="duty"></div>
+          <a href="https://cssgridgarden.com/" target="_blank"><button class="btn-roshan">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+
+    <div class="card">
+      <center><img src="images/games/robocode.png"></center>
+      <center>
+        <div class="card-title">Bandit</div>
+        <div id="detail">
+          <p>Bandit is a web-based game that helps beginners learn the command-line interface (CLI) by solving a series of challenges. Players navigate through a simulated terminal environment and apply various commands to progress through the levels. It provides a hands-on way to familiarize oneself with common CLI tools and syntax.</p>
+          <div class="duty"></div>
+          <a href="https://overthewire.org/wargames/bandit/" target="_blank"><button class="btn-akhil">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="diffSection" id="games_section">
+  <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Artificial Intelligence </p></center>
+  <div class="totalcard">
+    <div class="card">
+      <center><img src="images/games/codecombat.jpg"></center>
+      <center>
+        <div class="card-title">OpenAI gym</div>
+        <div id="detail">
+          <p>OpenAI Gym is a popular open-source platform for developing and comparing reinforcement learning algorithms. It provides a wide range of pre-built environments and tools for creating custom environments, making it easier to train and evaluate AI agents in various scenarios.</p>
+          <div class="duty"></div>
+          <a href="https://openai.com/research/gym-retro" target="_blank"><button class="btn-roshan">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+
+    <div class="card">
+      <center><img src="images/games/robocode.png"></center>
+      <center>
+        <div class="card-title">AI dangeon</div>
+        <div id="detail">
+          <p>AI Dungeon is an AI-powered text adventure game that generates dynamic and interactive stories based on player inputs. players can freely explore and interact with a virtual world, making choices that shape the narrative and drive the gameplay experience. </p>
+          <div class="duty"></div>
+          <a href="https://aidungeon.io/" target="_blank"><button class="btn-akhil">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="diffSection" id="games_section">
+  <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Data Science</p></center>
+  <div class="totalcard">
+    <div class="card">
+      <center><img src="images/games/codecombat.jpg"></center>
+      <center>
+        <div class="card-title">Data camp</div>
+        <div id="detail">
+          <p>DataCamp is an online learning platform that offers interactive courses and tutorials for data science and programming. It provides a hands-on learning experience with real-world exercises and projects, allowing learners to gain practical skills in data analysis, machine learning, and data visualization.</p>
+          <div class="duty"></div>
+          <a href="https://www.datacamp.com/projects/1413" target="_blank"><button class="btn-roshan">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+
+    <div class="card">
+      <center><img src="images/games/robocode.png"></center>
+      <center>
+        <div class="card-title">Kaggle</div>
+        <div id="detail">
+          <p>Kaggle is a popular platform for data science competitions and collaborative data analysis. It hosts a diverse community of data scientists and machine learning practitioners who participate in challenges, share datasets, and collaborate on projects. Kaggle provides access to a wide range of datasets, notebooks, and machine learning tools.</p>
+          <div class="duty"></div>
+          <a href="https://www.kaggle.com/datasets/gregorut/videogamesales" target="_blank"><button class="btn-akhil">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="diffSection" id="games_section">
+  <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Machine Learning & Robotics</p></center>
+  <div class="totalcard">
+    <div class="card">
+      <center><img src="images/games/codecombat.jpg"></center>
+      <center>
+        <div class="card-title">Tensor flow playground</div>
+        <div id="detail">
+          <p>TensorFlow Playground is an intuitive web-based tool for experimenting with neural networks. It allows users to create, train, and visualize neural network models in real-time. With its interactive interface, users can easily tweak network architectures, activation functions, and hyperparameters to observe their effects on the model's performance. </p>
+          <div class="duty"></div>
+          <a href="https://cloud.google.com/blog/products/ai-machine-learning/understanding-neural-networks-with-tensorflow-playground" target="_blank"><button class="btn-roshan">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+
+    <div class="card">
+      <center><img src="images/games/robocode.png"></center>
+      <center>
+        <div class="card-title">Robocode</div>
+        <div id="detail">
+          <p>Robocode is a programming game where players write Java code to control robots that battle against each other. It's a fun and challenging way to learn Java programming and robotics concepts.</p>
+          <div class="duty"></div>
+          <a href="https://robocode.sourceforge.io/" target="_blank"><button class="btn-akhil">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="diffSection" id="games_section">
+  <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Cyber Security</p></center>
+  <div class="totalcard">
+    <div class="card">
+      <center><img src="images/games/codecombat.jpg"></center>
+      <center>
+        <div class="card-title">Overthewire</div>
+        <div id="detail">
+          <p>OverTheWire is a platform that offers a variety of war games designed to help users learn and practice cybersecurity skills. It provides challenges that cover topics such as network security, cryptography, web exploitation, and more.</p>
+          <div class="duty"></div>
+          <a href="https://overthewire.org/wargames/" target="_blank"><button class="btn-roshan">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+
+    <div class="card">
+      <center><img src="images/games/robocode.png"></center>
+      <center>
+        <div class="card-title">PicoCTF</div>
+        <div id="detail">
+          <p>PicoCTF is an online cybersecurity competition platform that aims to teach participants about various security vulnerabilities and techniques. It offers challenges in areas like binary exploitation, cryptography, forensics, web security, and more.</p>
+          <div class="duty"></div>
+          <a href="https://picoctf.org/" target="_blank"><button class="btn-akhil">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="diffSection" id="games_section">
+  <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Competitive Program</p></center>
+  <div class="totalcard">
+    <div class="card">
+      <center><img src="images/games/codecombat.jpg"></center>
+      <center>
+        <div class="card-title">TopCoder</div>
+        <div id="detail">
+          <p>Topcoder is an online platform that hosts competitive programming challenges and coding contests. It provides a community of talented developers and programmers with opportunities to showcase their skills, solve complex problems, and earn recognition and rewards.</p>
+          <div class="duty"></div>
+          <a href="https://www.topcoder.com/" target="_blank"><button class="btn-roshan">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+
+    <div class="card">
+      <center><img src="images/games/robocode.png"></center>
+      <center>
+        <div class="card-title">Codeforces</div>
+        <div id="detail">
+          <p>Codeforces is a popular competitive programming platform that hosts regular coding contests and challenges. It offers a competitive environment where participants can solve algorithmic problems, improve their coding abilities, and compete against fellow programmers from around the world.</p>
+          <div class="duty"></div>
+          <a href="https://codeforces.com/" target="_blank"><button class="btn-akhil">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="diffSection" id="games_section">
+  <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Coding Games</p></center>
+  <div class="totalcard">
+    <div class="card">
+      <center><img src="images/games/codecombat.jpg"></center>
+      <center>
+        <div class="card-title">CodeCombat</div>
+        <div id="detail">
+          <p>CodeCombat is a platform for learning programming through video games. It offers a fun and engaging way for beginners to learn coding concepts and programming languages like Python, JavaScript, and HTML/CSS.</p>
+          <div class="duty"></div>
+          <a href="https://codecombat.com/" target="_blank"><button class="btn-roshan">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+
+    <div class="card">
+      <center><img src="images/games/robocode.png"></center>
+      <center>
+        <div class="card-title">Robocode</div>
+        <div id="detail">
+          <p>Robocode is a programming game where players write Java code to control robots that battle against each other. It's a fun and challenging way to learn Java programming and robotics concepts.</p>
+          <div class="duty"></div>
+          <a href="https://robocode.sourceforge.io/" target="_blank"><button class="btn-akhil">Play Now</button></a>
+        </div>
+      </center>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!--team-->
+
+<div class="diffSection" id="team_section">
+
+    <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">General</p></center>
+    <div class="totalcard">
+      
+      <center>
+
+        <div class="card">
+          <center><img src="/GameEd/Games/Im/code_org.jpeg"></center>
+            <center><div class="card-title"> Code.org</div>
+            <div id="detail">
+                <p>An educational platform that offers a variety of coding games and activities for learners of all ages. It features interactive lessons, tutorials, and coding projects to introduce programming concepts and foster creativity.</p>
+                <a href="https://code.org/"><button class="btn-roshan">Click +</button></a>
+            </div>    
+            </center>
+                  
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="footer-container">
+        <div class="left-col">
+            <img src="images/icon/logo.jpg" style="width: 200px;">
+            <div class="logo"></div>
+            <div class="social-media">
+                <a href="#"><img src="images/icon\fb.png"></a>
+                <a href="#"><img src="images/icon\insta.png"></a>
+                <a href="#"><img src="images/icon\tt.png"></a>
+                <a href="#"><img src="images/icon\ytube.png"></a>
+                <a href="#"><img src="images/icon\linkedin.png"></a>
+            </div><br><br>
+            <p class="rights-text">Copyright © 2023 All Rights Reserved.</p>
+            <br><p><img src="images/icon/location.png"> XYZ University<br>Vellore, TamilNadu-632001</p><br>
+            <p><img src="images/icon/phone.png"> +91-638050xxxx<br><img src="images/icon/mail.png">&nbsp; XXX3909@gmail.com</p>
+        </div>
+        <div class="right-col">
+            <h1 style="color: #fff">Our Newsletter</h1>
+            <div class="border"></div><br>
+            <p>Enter Your Email to get our News and updates.</p>
+            <form class="newsletter-form">
+                <input class="txtb" type="email" placeholder="Enter Your Email">
+                <input class="btn" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</footer>
+
+</body>          
+</html>
+

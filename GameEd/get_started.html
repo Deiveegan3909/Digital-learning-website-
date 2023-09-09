@@ -1,0 +1,304 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+	header {
+   background-color: #fff;/* set background color of header */
+  color: #fff; /* set text color to white */
+  padding: 10px; /* add padding to the header */
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+header nav ul li::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: blueviolet;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -5px;
+}
+
+.second-header ul li::before {
+  color: #F00; /* set the color of the list icons to red */
+}
+
+.nav-box {
+  display: flex; /* set display to flex to align items */
+  justify-content: center; /* center items horizontally */
+  background-color: #07E6E5;
+  color: #fff;
+  padding: 10px;
+}
+
+.nav-box a {
+  color: #fff; /* set text color to white */
+  text-decoration: none; /* remove underline from links */
+  padding: 10px; /* add padding to links */
+  margin: 0 10px; /* add margin to links */
+  border-radius: 5px; /* add border radius to links */
+  background-color: #007bff; /* set background color of links */
+}
+
+.nav-box a:hover {
+  background-color: #0062cc; /* change background color on hover */
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.get-started {
+  background-color: #2ecc71;
+}
+
+h1 {
+  color: #880015;
+}
+h2 {
+  color: #880015;
+}
+h3 {
+  color: #ad0404;
+}
+h4 {
+  color: #4b0245;
+}
+h5 {
+  color: #4d0346;
+}
+h6 {
+  color: #ad049f;
+}
+
+code {
+	display: block;
+	padding: 10px;
+	font-family: Consolas, monospace;
+	font-size: 14px;
+	color: #333;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	overflow-x: auto;
+  }
+  .box {
+	  border:  1px solid #ccc;
+	  padding: 2px 5px;
+	  background-color: #f5f5f5;
+  }
+  img {
+	max-width: 100%;
+	height: auto;
+  }
+  body {
+	margin-left: 20px;
+	margin-right: 20px;
+  }
+  </style>  
+
+</head>
+
+<body>
+	<header>
+		<div class="nav-box">
+		  <a href="index.html">home</a>
+		  <a href="tutorials.html">tutorials</a>
+		  <a href="about.html">about</a>
+		  <a href="contact.html">contact</a>
+		</div>
+
+	  </header>
+	  <br>
+
+
+
+   <div class="tutorial-toc"><h3>Table of Contents
+    </h3><div class="tutorial-toc__links"><ul>
+  <li><a href="#run-thonny">Run Python using Thonny IDE</a></li>
+  <li><a href="#install-python">Install Python Separately</a></li>
+  <li><a href="#immediate-mode">Run Python in Immediate mode</a></li>
+  <li><a href="#ide">Run Python in the IDLE</a></li>
+  <li><a href="#first-program">Your first Python Program</a></li>
+</ul>
+</div></div></div>                          </div>
+
+                        <div class="block">
+
+
+<div class="content">
+    <p>Python is a cross-platform programming language, which means that it can run on multiple platforms like Windows, macOS, Linux, and has even been ported to the Java and .NET virtual machines. It is free and open-source.</p>
+
+<p>Even though most of today's Linux and Mac have Python pre-installed in it, the version might be out-of-date. So, it is always a good idea to install the most current version.</p>
+
+<hr>
+<h2 id="run-thonny">The Easiest Way to Run Python</h2>
+
+<p>The easiest way to run Python is by using <strong>Thonny IDE</strong>.</p>
+
+<p>The Thonny IDE comes with the latest version of Python bundled in it. So you don't have to install Python separately.</p>
+
+<p>Follow the following steps to run Python on your computer.</p>
+
+<ol>
+  <li>Download <a href="https://thonny.org/">Thonny IDE</a>.</li>
+  <li>Run the installer to install <strong>Thonny</strong> on your computer.</li>
+  <li>Go to: <strong>File</strong> &gt; <strong>New</strong>. Then save the file with <code>.py</code> extension. For example, <code>hello.py</code>, <code>example.py</code>, etc.<br>
+      You can give any name to the file. However, the file name should end with <strong>.py</strong></li>
+  <li>Write Python code in the file and save it.
+      <figure><img alt="Run Python on your computer" height="421" src="//cdn.programiz.com/sites/tutorial2program/files/test.jpg" title="Run Python on Thonny IDE" width="702">
+          <figcaption>Running Python using Thonny IDE</figcaption>
+      </figure>
+  </li>
+  <li>Then Go to <strong>Run</strong> &gt; <strong>Run current script</strong> or simply click <strong>F5</strong> to run it.</li>
+</ol>
+
+<hr>
+<h2 id="install-python">Install Python Separately</h2>
+
+<p>If you don't want to use Thonny, here's how you can install and run Python on your computer.</p>
+
+<ol>
+  <li>Download the <a href="https://www.python.org/downloads/">latest version of Python</a>.</li>
+  <li>Run the installer file and follow the steps to install Python<br>
+      During the install process, check <strong>Add Python to environment variables</strong>. This will add Python to environment variables, and you can run Python from any part of the computer.<br>
+      <br>
+      Also, you can choose the path where Python is installed.
+      <figure><img alt="Install Python on your computer" height="340" src="//cdn.programiz.com/sites/tutorial2program/files/python-install_0.jpg" title="Choose where Python is installed." width="550">
+          <figcaption>Installing Python on the computer</figcaption>
+      </figure>
+  </li>
+</ol>
+
+<p>Once you finish the installation process, you can run Python.</p>
+
+<hr>
+<h3 id="immediate-mode">1. Run Python in Immediate mode</h3>
+
+<p></p><div id="block-inject-1" class="block-inject block-inject-1">
+  
+  
+  
+  <style>
+  #div-gpt-ad-Programizcom37046 {display:none; width: 728px; height: 90px; }
+  #div-gpt-ad-Programizcom36796 {display: block;}
+  @media(min-width: 992px) { #div-gpt-ad-Programizcom37046 {display: block;} #div-gpt-ad-Programizcom36796 {display: none;}}
+  </style>
+  
+  <div id="div-gpt-ad-Programizcom37046" style="margin: 32px 0;">
+  </div>
+  
+  <div id="div-gpt-ad-Programizcom36796" style="margin: 32px 0; min-height: 250px;">
+  </div>
+  </div><div class="clearfix"></div><p>Once Python is installed, typing <code>python</code> in the command line will invoke the interpreter in immediate mode. We can directly type in Python code, and press Enter to get the output.</p>
+
+<p>Try typing in <code>1 + 1</code> and press enter. We get <code>2</code> as the output. This prompt can be used as a calculator. To exit this mode, type <code>quit()</code> and press enter.</p>
+
+<figure><img alt="Run Python in Immediate mode" height="254" src="//cdn.programiz.com/sites/tutorial2program/files/python-run-command-mode.jpg" title="Run Python in Command Prompt" width="668">
+  <figcaption>Running Python on the Command Line</figcaption>
+</figure>
+
+<hr>
+<h3 id="ide">2. Run Python in the Integrated Development Environment (IDE)</h3>
+
+<p>We can use any text editing software to write a Python script file.</p>
+
+<p>We just need to save it with the <code>.py</code> extension. But using an IDE can make our life a lot easier. IDE is a piece of software that provides useful features like code hinting, syntax highlighting and checking, file explorers, etc. to the programmer for application development.</p>
+
+<p>By the way, when you install Python, an IDE named <strong>IDLE</strong> is also installed. You can use it to run Python on your computer. It's a decent IDE for beginners.</p>
+
+<p>When you open IDLE, an interactive Python Shell is opened.</p>
+
+<figure><img alt="Python IDLE" height="328" src="//cdn.programiz.com/sites/tutorial2program/files/idle-python.jpg" title="Python IDLE" width="624">
+  <figcaption>Python IDLE</figcaption>
+</figure>
+
+<p>Now you can create a new file and save it with <strong>.py</strong> extension. For example, <strong>hello.py</strong></p>
+
+<p>Write Python code in the file and save it. To run the file, go to <strong>Run</strong> &gt; <strong>Run Module</strong> or simply click <strong>F5</strong>.</p>
+
+<figure><img alt="Run Python programs in IDLE" height="453" src="//cdn.programiz.com/sites/tutorial2program/files/python-program-run-idle.jpg" title="Run Python programs in IDLE" width="726">
+  <figcaption>Running a Python program in IDLE</figcaption>
+</figure>
+
+<hr>
+<h2 id="first-program">Your first Python Program</h2>
+
+<p>Now that we have Python up and running, we can write our first Python program.</p>
+
+<p>Let's create a very simple program called <code>Hello World</code>. A <strong>"Hello, World!"</strong> is a simple program that outputs <code>Hello, World!</code> on the screen. Since it's a very simple program, it's often used to introduce a new programming language to beginners.</p>
+
+<p>Type the following code in any text editor or an IDE and save it as <code>hello_world.py</code></p>
+
+<pre class="python-exec">
+<code>
+print("Hello, world!")</code></pre>
+
+<p>Then, run the file. You will get the following output.</p>
+
+<pre>
+<samp>Hello, world!</samp></pre>
+
+<p>Congratulations! You just wrote your first program in Python.</p>
+
+<p>As you can see, this was a pretty easy task. This is the beauty of the Python programming language.</p>
+</div>
+
+
+
+</div>
+</body>
+                
+<footer>
+    <section id="bottom">
+      <div class="container">
+        <div class="row">
+        <div class="col-2">
+          <h2>About</h2>
+          <p>Some information about us goes here.</p>
+          <a href="index.html" class="btn">Learn More</a>
+        </div>
+        <div class="col-2">
+          <h2>Contact Us</h2>
+          <p>Get in touch with us to learn more about our Python tutorials.</p>
+          <a href="index.html" class="btn">Contact Us</a>
+        </div>
+        </div>
+      </div>
+      </section>
+      <footer>
+      <div class="container">
+        <p>&copy; 2023 My Python Tutorial Website. All rights reserved.</p>
+      </div>
+      </footer>
+
+
+</html>
+                         
